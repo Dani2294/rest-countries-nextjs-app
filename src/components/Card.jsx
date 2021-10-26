@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Card = ({ country }) => {
 	return (
-		<div className='shadow-xl rounded'>
+		<div className='shadow-xl rounded transform sm:hover:scale-105 sm:active:scale-100 transition duration-300'>
 			<Link href='/country/[id]' as={`/country/${country.alpha3Code}`}>
 				<a>
 					<Image

@@ -3,18 +3,10 @@ import Head from 'next/head';
 import Countries from '../src/components/Countries';
 import Filter from '../src/components/Filter';
 import Header from '../src/components/Header';
+import { useAppContext } from '../src/contexts/filter.context';
 
 export default function Home({ countries }) {
-	const [dark, setDark] = useState(false);
-
-	const handleDarkMode = () => {
-		setDark(!dark);
-		localStorage.setItem('darkMode', !dark);
-	};
-
-	useEffect(() => {
-		setDark(localStorage.getItem('darkMode'));
-	}, []);
+	const { dark, handleDarkMode } = useAppContext();
 
 	return (
 		<div className={dark && 'dark'}>

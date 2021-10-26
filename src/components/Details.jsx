@@ -12,7 +12,7 @@ const Details = ({ country, borders }) => {
 				</a>
 			</Link>
 			<div className='mt-28 space-y-14 lg:flex justify-between lg:space-y-0'>
-				<div className='w-full flex-initial mr-14'>
+				<div className='w-full flex-initial mr-10'>
 					<Image
 						src={country.flag}
 						alt={country.name}
@@ -24,7 +24,7 @@ const Details = ({ country, borders }) => {
 				</div>
 				<div className='space-y-10 dark:text-dmtxt-lmelts-white'>
 					<h1 className='font-bold text-2xl'>{country.name}</h1>
-					<div className='sm:flex justify-between space-y-10'>
+					<div className='sm:flex justify-between space-y-10 sm:space-y-0'>
 						<div className='space-y-4'>
 							<p className='text-lminput-dark-gray dark:text-dmtxt-lmelts-white'>
 								<strong className='text-lmtxt-very-dark-blue dark:text-dmtxt-lmelts-white'>
