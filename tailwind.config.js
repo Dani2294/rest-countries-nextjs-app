@@ -1,10 +1,6 @@
 module.exports = {
 	mode: 'jit',
-	purge: [
-		'./src/**/*.{js,jsx,ts,tsx}',
-		'./public/index.html',
-		'./components/**/*.{js,ts,jsx,tsx}',
-	],
+	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
 		extend: {
@@ -18,6 +14,11 @@ module.exports = {
 				'lminput-dark-gray': 'hsl(0, 0%, 52%)',
 				'lmbg-very-light-gray': 'hsl(0, 0%, 98%)',
 				'dmtxt-lmelts-white': '#fff',
+			},
+			placeholderColor: (theme) => theme('colors'),
+			placeholderColor: {
+				'lmbg-very-light-gray': 'hsl(0, 0%, 98%)',
+				'light-gray': 'hsl(0, 0%, 82%)',
 			},
 		},
 	},

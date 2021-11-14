@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
-import '../src/styles/globals.css';
-import { AppWrapper } from '../src/contexts/filter.context';
+import { AppWrapper } from '../app.context';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
 	return (
